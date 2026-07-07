@@ -353,9 +353,9 @@ MEMCMP (const void *s1, const void *s2, size_t len)
 libc_hidden_builtin_def(memcmp)
 #ifdef weak_alias
 # undef bcmp
-weak_alias (memcmp, bcmp)
+weak_alias (MEMCMP, bcmp)
 #endif
 
 #undef __memcmpeq
-strong_alias (memcmp, __memcmpeq)
+strong_alias (MEMCMP, __memcmpeq)
 libc_hidden_def(__memcmpeq)
